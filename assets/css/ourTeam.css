@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+
+body {
+    background-color: #dbf6dc;
+}
+/*start navbar*/
+body{
+    font-family: var(--mainFont); 
+      background-color: #f2fcf5;
+      height: 1000px;
+  }
+  :root{
+      --mainFont :"Poppins", serif,
+      --secondFont :"Manrope", serif,
+   }
+  /*
+    font-family: "Poppins", serif;
+      font-family: "Manrope", serif;
+  */
+  .navv{
+      background-color: #bcbfbd;
+  }
+  /*start navbar*/
+  .aNav{
+      color: rgb(74, 74, 74);
+      cursor: pointer;
+      
+  }
+  .navbar-nav .nav-link:hover {
+  color: orange !important; 
+  }
+  
+  .navbar-nav .dropdown .nav-link.dropdown-toggle:hover {
+  color: orange !important; 
+  }
+  
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: orange !important; 
+    color: white !important;  
+  }
+  .aNav {
+  font-size: 20px;  
+  color: #555; 
+  transition: color 0.3s ease;  
+  }
+  
+  .aNav:hover {
+  color: orange; 
+  }
+  a{
+  font-family: var(--secondFont);
+  }
+/*end navbar*/
+  /*start hero*/
+.container-fluid{
+  position: relative;
+  z-index: -1;
+  }
+   
+  .hero-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 100px;
+  }
+  .hero-section h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #212529;
+      text-align: center;
+  }
+  .breadcrumb {
+      justify-content: center;
+      background: transparent;
+  }
+  .breadcrumb a {
+      text-decoration: none;
+      color: #28a745;
+  }
+  .hero-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      z-index: -1;
+  }
+  @media (max-width: 768px) {
+      .hero-image {
+          display: none;
+      }
+  }
+  /*end hero*/
+/*start team section*/
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.card-text{
+    color: rgb(22, 110, 22);
+   
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.teamSec{
+  margin-top: 300px;
+  margin-bottom: 200px;
+}
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color:rgb(191, 238, 191);
+    padding: 10px;
+}
+
+ .social-icons {
+    margin-top: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 1rem;
+    color: #6c757d;
+    transition: color 0.6s ease-in-out, transform 0.8s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.facebook:hover {
+    color: rgb(42, 146, 42);
+}
+
+.twitter:hover {
+    color: rgb(42, 146, 42);
+}
+
+.linkedin:hover {
+    color: rgb(42, 146, 42);
+}
+/*start footer*/
+footer {
+    background: #eafaf1;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .footer-links, .footer-contact {
+    list-style: none;
+    padding: 0;
+    color: rgb(80, 78, 78);
+  }
+  .subscribe{
+    color: rgb(80, 78, 78);
+  }
+  .footer-links li, .footer-contact li {
+    margin: 10px 0;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: rgb(80, 78, 78);
+    display: block;  
+    transition: color 0.3s;
+  }
+  
+  .footer-links li a:hover {
+    color: green;
+    font-weight: bold;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   }
+  .social-icons a {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+  }
+  .social-icons a:hover {
+    background: orange;
+  }
+  @media (max-width: 768px) {
+    .row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .col-md-4 {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+   /* end footer*/
